@@ -1,0 +1,748 @@
+/* Generales */
+:root {
+    --red-color: #9b1700;
+    --grey-color: #e8e8e8;
+    --dark-grey-color: #433a44;
+    --black: #1c1c1c;
+  } 
+  
+  * {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  body {
+    margin: auto;
+    background-color: var(--grey-color);
+    font-family: "Noto Serif", serif;
+  }
+  
+  header,
+  main,
+  .bg-color-content {
+    max-width: 1920px;
+    margin: auto;
+  }
+  
+  .font-noto {
+    font-family: "Noto Serif", serif;
+  }
+  
+  .font-open-sans {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .color-grey {
+    color: var(--grey-color);
+  }
+  
+  .color-dark-grey {
+    color: var(--dark-grey-color);
+  }
+  
+  .color-black {
+    color: var(--black);
+  }
+  
+  .visited-black:visited {
+    color: var(--black);
+  }
+
+  .visited-red:visited {
+    color: var(--red-color);
+  }
+  
+  .hover-black-alpha:hover {
+    color: rgba(28, 28, 28, 0.5);
+  }
+  
+  .color-red {
+    color: var(--red-color);
+  }
+  
+  .hover-red:hover {
+    color: var(--red-color);
+  }
+  
+  .hover-red-alpha:hover {
+    color: rgba(155, 23, 0, 0.5);
+  }
+  
+  .color-white {
+    color: #ffffff;
+  }
+  
+  .selected {
+    text-decoration: underline;
+  }
+  
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .bolder {
+    font-weight: bolder;
+  }
+  
+  .normal {
+    font-weight: normal;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  .thin-line-height {
+    line-height: 25px;
+  }
+  
+  .margin-top-10 {
+    margin-top: 10px;
+  }
+  
+  .margin-top-20 {
+    margin-top: 20px;
+  }
+  
+  .margin-top-30 {
+    margin-top: 30px;
+  }
+  
+  .margin-top-40 {
+    margin-top: 40px;
+  }
+  
+  .margin-top-120 {
+    margin-top: 120px;
+  }
+  
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+  
+  .margin-bottom-15 {
+    margin-bottom: 15px;
+  }
+  
+  .margin-bottom-20 {
+    margin-bottom: 20px;
+  }
+  
+  .margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+  
+  .margin-bottom-40 {
+    margin-bottom: 40px;
+  }
+  
+  .margin-bottom-120 {
+    margin-bottom: 120px;
+  }
+  
+  .padding-top-10 {
+    padding-top: 10px;
+  }
+
+  .padding-top-30 {
+    padding-top: 10px;
+  }
+  
+  .padding-top-60 {
+    padding-top: 60px;
+  }
+  
+  .line-height-1dot4 {
+    line-height: 1.4rem;
+  }
+  
+  .line-height-1dot6 {
+    line-height: 1.6rem;
+  }
+  
+  .line-height-1dot8 {
+    line-height: 1.8rem;
+  }
+  
+  .line-height-2dot8 {
+    line-height: 2.8rem;
+  }
+  
+  .font-size-1dot8rem {
+    font-size: 1.8rem;
+  }
+
+  .font-size-1dot3rem {
+    font-size: 1.3rem;
+  }
+  
+  .font-size-0dot8 {
+    font-size: 0.8rem;
+  }
+  
+  .font-size-0dot9 {
+    font-size: 0.9rem;
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto 15px auto;
+    flex-wrap: wrap;
+  }
+  
+  #header-container {
+    margin: 0 15px 0 15px;
+  }
+  
+  #logo-img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #presentacion-container p {
+    margin-top:10px;
+    line-height: 1.6rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+  
+    header ul {
+      flex-direction: column;
+    }
+  
+    div.logo-header {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    div.links-header {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    header ul li {
+      margin-top: 10px;
+    }
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.1rem;
+    overflow: hidden;
+  }
+  
+  header ul li {
+    margin-left: 20px;
+  }
+  
+  header ul a {
+    color: var(--black);
+  }
+  
+  #logo-header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure.iframe-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  iframe {
+    margin-top: 50px;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+
+  .font2rem {
+    font-size: 2rem;
+  }
+  
+  .font1dot5rem {
+    font-size: 1.5rem;
+  }
+  
+  .let-spa-min-1dot5 {
+    letter-spacing: -1.5px;
+  }
+  
+  
+  #logo-text-header {
+    margin-left: 10px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: rgb(67, 58, 68);
+    padding: 15px 15px 15px 15px;
+  }
+  
+  footer a {
+    color: rgb(255, 255, 255);
+  }
+  
+  footer a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  footer a:hover {
+    color: var(--red-color);
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  #go-up-button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .intro-max-width {
+      max-width: 67%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    footer {
+      text-align: center;
+    }
+  }
+  
+  /* Main */
+  @media only screen and (max-width: 768px) {
+    main {
+      max-width: 95%;
+      margin: auto;
+    }
+  
+    #all-index-blocks {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+ 
+    #categorias-pre-ls li {
+      width: 100vw;
+      margin: 15px 15px 15px 15px;
+    }
+  
+    #categorias-pre-ls img {
+      max-width: 95vw;
+    }
+    .li-children-comida {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      max-width: 33%;
+      min-width: 350px;
+    }
+  
+    .food-sublist {
+      margin-bottom: 60px;
+    }
+  
+    #all-food-info-container {
+      flex-wrap: wrap;
+      margin: auto;
+    }
+  
+    #info-food-container {
+      margin-top: 40px;
+    }
+  
+    #index-intro-container,
+    #clubes-tematicos-main-container {
+      width: 95%;
+      margin: auto;
+    }
+  
+    #breadcrumb-container {
+      max-width:100%;
+      width: 100vw;
+    }
+
+    #breadcrumb-container li:last-child {
+      text-overflow: ellipsis;
+      overflow:hidden;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    main {
+      max-width: 70%;
+      margin: auto;
+    }
+  
+    #index-oscars-container,
+    #clubes-tematicos-main-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    #all-index-blocks {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .block-unete {
+      width: 42%;
+    }
+  
+    #categorias-pre-ls li {
+      max-width: 350px;
+      min-width: 350px;
+      margin: 15px 15px 15px 15px;
+    }
+  
+    #categorias-pre-ls img {
+      max-width: 350px;
+    }
+  
+    #body-sesiones-container {
+      display: flex;
+      flex-direction: row;
+      border-top-width: 4px;
+      border-top-style: dotted;
+      border-color: var(--red-color);
+      justify-content: center;
+    }
+  
+    #head-sesiones {
+      margin: auto;
+      max-width: 60vw;
+    }
+  
+    .li-children-comida {
+      margin: 10px 20px 80px 20px;
+      max-width: 33%;
+      min-width: 180px;
+    }
+  
+    .food-sublist {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    #ficha-container {
+      width: 40vw;
+      min-width: 300px;
+      margin-right: 20px;
+    }
+  
+    #info-food-container {
+      width: 60vw;
+      min-width: 300px;
+      text-align: justify;
+      margin-left: 20px;
+    }
+  
+    #breadcrumb-container {
+      width: 100vw;
+      max-width: 100%;
+    }
+  }
+  
+  .block-logo img {
+    margin: 20px 20px 0 20px;
+    height: 180px;
+    width: 180px;
+  }
+  
+  #block-unete-club-index {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #index-form-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #categorias-pre-ls {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #categorias-pre-ls h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  #categorias-pre-ls h2:before {
+    color: var(--red-color);
+    content: " ···· ";
+    margin-right: 8px;
+  }
+  
+  #body-sesiones-container ul {
+    list-style-type: none;
+  }
+  
+  #food-covers-container li.li-parent-food:before {
+    color: var(--red-color);
+    content: " ····· ";
+    font-size: 1.8rem;
+  }
+  
+  #food-covers-container li.li-parent-food {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  #food-covers-container {
+    margin-top: 30px;
+  }
+  
+  #menu-sesiones-container {
+    margin-right: 60px;
+  }
+  
+  .food-sublist a {
+    color: rgba(155, 23, 0, 1);
+  }
+  
+  .li-children-comida {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 13vw;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+  }
+  
+  .food-name {
+    margin-top: auto;
+  }
+  
+  .li-children-comida img {
+    width: 100%;
+  }
+  
+  .food-sublist p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 100%;
+  }
+  
+  .food-sublist a:visited {
+    color: rgba(155, 23, 0, 1);
+  }
+  
+  .li-children-comida img:hover,
+  .food-name a p:hover,
+  .opacity-0dot5 {
+    opacity: 0.5;
+  }
+  
+  #ls-breadcrumb {
+    display: flex;
+    white-space: nowrap;
+    list-style-type: none;
+    flex-wrap: nowrap;
+  }
+  
+  #ls-breadcrumb li + li:before {
+    content: " / ";
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 7px;
+  }
+  
+  #all-food-info-container {
+    display: flex;
+  }
+  
+  #ficha-container p {
+    margin: 4px 0 4px 20px;
+    padding-right: 60px;
+  }
+  
+  #ficha-container h3 {
+    margin-top: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #000000;
+    margin-bottom: 7px;
+  }
+  
+  #info-food-container p {
+    margin: 20px 0px;
+    line-height: 1.6rem;
+  }
+
+
+  #ficha-container img.receta-img{
+    max-width:100%;
+  }
+
+
+  #info-food-container img.author-img {
+    height: auto;
+    width: 120px;
+    float: left;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin-top: 15px;
+  }
+  
+  .trailer-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .trailer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  #video-info-p {
+    position: relative;
+    bottom: 1.5%;
+    font-style: italic;
+  }
+
+div#main-content {
+  display: flex;
+  justify-content: center;
+}
+
+dd {
+    padding-bottom: 25px;
+    padding-left: 40px;
+}
+
+.align-center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Animation header */ 
+
+@keyframes bounceIn1 {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
+}
+
+@keyframes spin-inverse { 
+  from { 
+      transform: rotate(360deg); 
+  } to { 
+      transform: rotate(0deg); 
+  }
+}
+
+#logo-text-header span:nth-child(2), #logo-text-header span:last-child {
+  animation: bounceIn1 2s ease-in-out infinite;
+}
+
+
+.block-logo:nth-child(odd) img:hover {
+  animation: spin 2s ease-in-out infinite;
+}
+
+.block-logo:nth-child(even) img:hover {
+  animation: spin-inverse 2s ease-in-out infinite;
+}
+
+
+.clip-hexagon-type1 {
+  clip-path: polygon(0 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0, 25% 0)
+}
+
+.clip-hexagon-type2 {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+}
+
+.clip-polygon {
+  clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%)
+}
+
+.clip-ellipse {
+  clip-path:ellipse(50% 40% at 50% 40%);
+}
