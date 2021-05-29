@@ -746,3 +746,12 @@ dd {
 .clip-ellipse {
   clip-path:ellipse(50% 40% at 50% 40%);
 }
+
+.video-div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
