@@ -752,5 +752,8 @@ dd {
   max-width: 640px;
   margin-bottom: 30px;
   margin-top: 30px;
+}
 
+.video-div img:hover { 
+  opacity: 0.5;
 }
